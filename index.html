@@ -9,15 +9,24 @@
 </head>
 <body>
     <header>
-        <h1 class="text-3xl">hunting phone</h1>
+        <h1 class="text-5xl text-center font-bold">Hunting phone</h1>
     </header>
-    <main>
-        <section>
-            <div id="phone-container">
-               
-
-
-            </div>
+    <main class="container mx-auto mt-8">
+        <!-- this is search section -->
+        <h1 class="text-3xl text-center font-medium">Search your phone</h1>
+        <section class="bg-gray-100 p-2 mx-auto text-center w-[650px] mt-4">
+            
+            <input id="search-field" type="text" placeholder="search here" class="input input-ghost w-full max-w-xs bg-white" />
+            <button onclick="handleSearch()" class="btn btn-primary">Search</button>
+        </section>
+        <!-- this is search result section -->
+        <section class="mt-8">
+            <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2 
+            lg:grid-cols-3 gap-2">
+         </div>
+         <div id="show-all-btn" class="hidden text-center mt-5">
+            <button class="btn btn-primary">Show all</button>
+         </div>
         </section>
     </main>
     <script src="index.js"></script>
